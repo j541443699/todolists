@@ -176,7 +176,6 @@ class AddTimeDialog {
 
                     /**
                      * 将不同的spinner的数据存到hasMap里面
-                     *
                      * 用于返回数据
                      * */
                     HashMap<String, String> map = new HashMap<String, String>();

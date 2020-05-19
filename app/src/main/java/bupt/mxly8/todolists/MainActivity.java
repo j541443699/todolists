@@ -76,12 +76,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             String id = list.get(position).get("id");
                             noteOperator.delete(Integer.parseInt(id));
                             list.remove(position);
-                            //listAdapter.notify();
+                            //listAdapter.notify();//这里会报错：java.lang.IllegalMonitorStateException:object not locked by thread before notify()
+                            //原因未知
                             listView.setAdapter(listAdapter);
+                            onStart();
                         }
                     });
 
-                    //添加AlterDialog.Builder对象的setNegativeButton()方法
                     builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
@@ -89,6 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         }
                     });
                     builder.create().show();
+
                     return true;
                 }
             });
@@ -101,6 +103,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onStart(){
         super.onStart();
+        if(list.size() == 0){
+            Toast.makeText(this, "暂无待办事项，请添加", Toast.LENGTH_SHORT).show();
+        }
         //从其他Activity回到MainActivity时，调用onStart()来刷新列表
         final NoteOperator noteOperator_2 = new NoteOperator(MainActivity.this);
         list = noteOperator_2.getNoteList();
