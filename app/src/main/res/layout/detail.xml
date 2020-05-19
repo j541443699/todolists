@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:layout_marginBottom="40dp">
+
+        <Button
+            android:id="@+id/back_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="20dp"
+            android:background="@null"
+            android:layout_weight="1"
+            android:textColor="@color/white">
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细内容"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/white">
+        </TextView>
+        <Button
+            android:id="@+id/save_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="保存"
+            android:textSize="20dp"
+            android:background="@null"
+            android:layout_weight="1"
+            android:textColor="@color/white">
+        </Button>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/title_detail"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edit_sharp"
+        android:gravity="start">
+    </EditText>
+
+    <EditText
+        android:id="@+id/context_detail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edit_sharp"
+        android:gravity="start">
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/edit_ddl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="截止时间:"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/edit_ddl_year"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/enter_kuang"
+
+            android:maxLength="4"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="年"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/edit_ddl_month"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/enter_kuang"
+
+            android:maxLength="2"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="月"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/edit_ddl_day"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/enter_kuang"
+
+            android:maxLength="2"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="日"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/edit_ddl_time"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/enter_kuang"
+
+            android:maxLength="2"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="时"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

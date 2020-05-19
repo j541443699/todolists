@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/note_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/note_title"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/note_ddl_year"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:text="年"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:id="@+id/note_ddl_month"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:text="月"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:id="@+id/note_ddl_day"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:text="日"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:id="@+id/note_ddl_time"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:text="时"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
+</LinearLayout>
